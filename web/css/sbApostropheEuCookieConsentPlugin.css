@@ -11,6 +11,7 @@
   font-size: 14px;
   padding: 0 0 15px 0;
   z-index: 9999;
+  display: none;
 }
 
 #sbEuCookieConsentBox p {
