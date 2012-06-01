@@ -1,0 +1,3 @@
+sb_eu_cookie_consent:
+  url: /sb-eu-cookie-consent
+  param: { module: sbEuCookieConsent, action: ConfirmCookie }

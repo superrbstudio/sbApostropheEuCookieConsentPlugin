@@ -1,0 +1,93 @@
+#sbEuCookieConsentBox {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #ebebeb;
+  background-color: rgba(235,235,235,0.95);
+  color: #666666;
+  border-top: 1px solid #666666;
+  font-size: 14px;
+  padding: 0 0 15px 0;
+  z-index: 9999;
+}
+
+#sbEuCookieConsentBox p {
+  margin: 0;
+  padding: 4px 0;
+}
+
+#sbEuCookieConsentBoxMessage a {
+  color: #858585;
+  text-decoration: none;
+}
+
+#sbEuCookieConsentBoxMessage a:hover {
+  color: #111111
+}
+
+@media only screen and (min-width: 481px) {
+  #sbEuCookieConsentBox {
+    height: 56px;
+    padding: 0;
+  }
+
+  #sbEuCookieConsentBox p {
+    margin: 0;
+    padding: 19px 0 0 0;
+  }
+
+  #sbEuCookieConsentBoxClear {
+    background: url('../images/grey_cross.png') no-repeat;
+    width: 30px;
+    height: 29px;
+    display: block;
+    float: right;
+    position: relative;
+    top: -25px;
+    left: -20px;
+  }
+
+  #sbEuCookieConsentBoxClear span {
+    display: none;
+  }
+}
+
+/* IE Support
+ *
+ * IE classes here are compatible with the HTML5 Boilerblate
+ * http://html5boilerplate.com
+ */
+
+.ie8 #sbEuCookieConsentBox, 
+.ie7 #sbEuCookieConsentBox {
+  height: 56px;
+  width: 100%;
+  padding: 0;
+}
+
+.ie8 #sbEuCookieConsentBox p, 
+.ie7 #sbEuCookieConsentBox p {
+  margin: 0;
+  padding: 19px 0 0 0;
+}
+
+.ie8 #sbEuCookieConsentBoxClear, 
+.ie7 #sbEuCookieConsentBoxClear {
+  background: url('../images/grey_cross.png') no-repeat;
+  width: 30px;
+  height: 29px;
+  display: block;
+  float: right;
+  position: relative;
+  top: -25px;
+  left: -20px;
+}
+
+.ie8 #sbEuCookieConsentBoxClear span, 
+.ie7 #sbEuCookieConsentBoxClear span {
+  display: none;
+}
+
+
