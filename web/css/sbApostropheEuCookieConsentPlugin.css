@@ -5,7 +5,7 @@
   left: 0;
   text-align: center;
   background-color: #ebebeb;
-  background-color: rgba(235,235,235,0.95);
+  opacity: 0.95;
   color: #666666;
   border-top: 1px solid #666666;
   font-size: 14px;
