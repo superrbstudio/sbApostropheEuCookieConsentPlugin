@@ -11,6 +11,13 @@ function sbEuCookieConsentSetup() {
     }
     return null;
   }
+
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+  }
   
   // listen for authorise click
   $('#sbEuCookieConsentBoxClear').click(function() {
@@ -21,6 +28,7 @@ function sbEuCookieConsentSetup() {
       data: { 'noRedirect': true },
       success: function() {
         $('#sbEuCookieConsentBox').fadeOut();
+        setCookie('sb-eu-cookie-nom-nom', 1, 365);
       }
     });
     
